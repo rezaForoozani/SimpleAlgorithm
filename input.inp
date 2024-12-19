@@ -1,0 +1,57 @@
+Title      : Laminar Flow and Heat Transfer Between Parallel Channel
+programmer : Reza Foroozani
+1          : 0-SIMPLE / 1-SIMPLER
+0          ! 0-Steady / 1-Unsteady
+1          ! 1=Energy ON / 0=Energy OFF
+4          ! 1-upwind / 2-hybrid / 3-powerlaw / 4-quick Hayase
+250        !Reynolds number
+1.0        !Prandtl  number
+0.01       !time step
+5.0        !length in x direction
+1.0        !length in y direction
+0.3        !urf for pressure(0.3 is for fluent)
+0.5        !urf for velocity(0.7 is for fluent)
+0.9        !urf for Temperature(1 is for fluent)
+1          ! type of top u (0: d/dn=0  1: fixed value)
+1          ! type of down u (0: d/dn=0  1: fixed value)
+1          ! type of left u (0: d/dn=0  1: fixed value)
+0          ! type of right u (0: d/dn=0  1: fixed value)
+1          ! type of top v (0: d/dn=0  1: fixed value)
+1          ! type of down v (0: d/dn=0  1: fixed value)
+1          ! type of left v (0: d/dn=0  1: fixed value)
+0          ! type of right v (0: d/dn=0  1: fixed value)
+0          ! type of top p (0: d/dn=0  1: fixed value)
+0          ! type of down p (0: d/dn=0  1: fixed value)
+0          ! type of left p (0: d/dn=0  1: fixed value)
+1          ! type of right p (0: d/dn=0  1: fixed value)
+1          ! type of top T (0: d/dn=0  1: fixed value )
+1          ! type of down T (0: d/dn=0  1: fixed value)
+1          ! type of left T (0: d/dn=0  1: fixed value)
+0          ! type of right T (0: d/dn=0  1: fixed value)
+1.0        ! Reference velocity(for calculation reynolds number/ this parameter is refrence velocity)
+0.0        ! top  u_velocity    
+0.0        ! down u_velocity 
+0.0        ! right u_velocity    
+1.0        ! left u_velocity 
+0.0        ! top  v_velocity    
+0.0        ! down v_velocity 
+0.0        ! right v_velocity    
+0.0        ! left v_velocity
+0.0        ! initial pressure
+0.0        ! initial pressure_correction
+1.0        ! initial velocity_x
+0.0001     ! initial velocity_y
+300.0      ! initial temperature
+300.0      ! top temperature    
+300.0      ! down temperature 
+0.0        ! right temperature    
+500.0      ! left temperature
+1e-4       ! max unsteady error  
+1e-4       ! max iteration error(inner loop - or - steady loop)  
+0          ! 0-animation off 1-animation on
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!read_me
+! note density fixed to 1.0 
+! number of grids must be changed in all of subroutines and main program
+!end of read_me
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
